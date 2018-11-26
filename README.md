@@ -1,19 +1,19 @@
-### Project: Logs Analysis
+## Project: Logs Analysis
 This project is for solving 3 querys 
- ## What are the most popular three articles of all time?
- ## Who are the most popular article authors of all time?
- ## On which days did more than 1% of requests lead to errors?
+ ### What are the most popular three articles of all time?
+ ### Who are the most popular article authors of all time?
+ ### On which days did more than 1% of requests lead to errors?
  
-###The database
+## The database
  the database called news which contains 3 tables
- ## articles
+ ### articles
 	which have 7 columns (author , title , slug , lead , body , time ,id)
- ## authors
+ ### authors
 	which have 3 columns (name , bio , id)
- ## log
+ ### log
 	which have 6 columns (path , ip , method , status , time , id)
 
-### Requirements
+## Requirements
 	- Vagrant
 	- VirtualBox
 	- the database file 
