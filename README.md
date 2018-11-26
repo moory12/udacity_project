@@ -21,7 +21,7 @@ This project is for solving 3 querys
 	- PostgreSQL
 	- Psycopg2 library
    
-##Set up instructions
+## Set up instructions
 	first you need to install virtualBox then you need to install Vagrant.
 	aftre that you need to run the virtualBox by typing Vagrant up 
 	then type Vagrant ssh to run the vagrant
