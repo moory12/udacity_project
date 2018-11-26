@@ -29,7 +29,7 @@ def answer1(cursor):
                 ORDER BY views DESC
                 LIMIT 3 ;"""
 
-    print("Question 1: What are the most popular three articles of all time?")
+    print("What are the most popular three articles of all time?")
     print("\n")
     cursor.execute(query)
     result = cursor.fetchall()
@@ -45,13 +45,12 @@ def answer2(cursor):
                 group by articles.author,authors.id
                 order by count(*) DESC limit 4;"""
 
-    print("Question 2: Who are the most popular article authors of all time?")
+    print("Who are the most popular article authors of all time?")
     print("\n")
     cursor.execute(query)
     result = cursor.fetchall()
-    for i in result:  # printing the result
-        print
-        i[0], str("----"), i[1], str("views")
+    for author, views in result:  # printing the result
+        print("{} -- {} views".format(author, views))
 
 
 def answer3(cursor):
@@ -69,13 +68,12 @@ def answer3(cursor):
                 group by date(time)
                 order by count(date(time)) DESC limit 1;"""
 
-    print("Question 3: What are the most popular three articles of all time?")
+    print("On which days did more than 1% of requests lead to errors?")
     print("\n")
     cursor.execute(query)
     result = cursor.fetchall()
-    for i in result:  # printing the result
-        print
-        i[0], str("---"), i[1]
+    for date, rate in result:  # printing the result
+        print("{} -- {} %".format(date, rate))
 
 
 def run():

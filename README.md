@@ -21,6 +21,11 @@ This project is for solving 3 querys
 	- PostgreSQL
 	- Psycopg2 library
    
-
-in order to run the code first you need to run vagrant and make sure you have the database file and the test.py file in the vagrant
-then write in the commend python test.py to run the file.
+##Set up instructions
+	first you need to install virtualBox then you need to install Vagrant.
+	aftre that you need to run the virtualBox by typing Vagrant up 
+	then type Vagrant ssh to run the vagrant
+	now in order to run test.py you need to move the file to the vagrant folder
+	along with the database file 
+	and finally just type python test.py 
+	
